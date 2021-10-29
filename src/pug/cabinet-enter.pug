@@ -1,0 +1,32 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header.pug
+        main
+
+            section.breadcrumbs 
+                h2.visually-hidden Навигация
+                .container 
+                    ul.breadcrumbs__list
+                        li 
+                            a(href="index.html") Главная 
+                        li /
+                        li 
+                            a.breadcrumbs__current Вход
+
+            section.page-enter.container 
+                .page-enter__wrapper
+                    h2.page-enter__title.title Введите новый пароль
+                    form.page-enter__form
+                        input.page-enter__input(type="email" placeholder="Email")
+                        input.page-enter__input(type="password" placeholder='Пароль')
+                        button.page-enter__button.button-main(type="submit") Войти
+                        a.page-enter__link(href="") Забыли пароль?
+
+
+
+        include modals/modal-feedback.pug
+        include modules/burger-menu.pug
+        include modules/footer.pug
+        include modules/script.pug

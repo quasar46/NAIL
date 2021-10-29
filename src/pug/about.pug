@@ -1,0 +1,72 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header.pug
+
+        section.breadcrumbs 
+            h2.visually-hidden Навигация
+            .container 
+                ul.breadcrumbs__list
+                    li 
+                        a(href="index.html") Главная 
+                    li /
+                    li 
+                        a.breadcrumbs__current О компании
+        section.banner
+            .container 
+                .banner__wrapper
+                    .banner__caption
+                        h2.banner__title Самый крупный розничный магазин с товарами для маникюра
+                        p.banner__subtitle Nail professional был основан в 2016 году, а наш интернет-магазин стал одним из первых магазинов, осуществляющих on-line продажу в регионе.
+                    .banner__picture 
+                        img(src="img/phone.png" alt="")
+
+        section.advantages-about 
+            .container 
+                .advantages-about__wrapper 
+                    h2.advantages-about__title.title Наши преимущества
+                    .advantages-about__numbers.numbers-advantages
+                        .number-advantages__item
+                            p
+                                //- i 
+                                    img(src="img/icons/arrow-advantages.svg" alt="")
+                                span 50 000
+                            p Покупателей
+                        .number-advantages__item
+                            p
+                                //- i 
+                                    img(src="img/icons/arrow-advantages.svg" alt="")
+                                span 150 000
+                            p Заказов
+                        .number-advantages__item
+                            p
+                                //- i 
+                                    img(src="img/icons/arrow-advantages.svg" alt="")
+                                span 10 лет
+                            p Успешной работы
+                    .advantages-about__content 
+                        p В нашем магазине вас встретят компетентные продавцы, которые с радостью и улыбкой помогут выбрать то что нужно. Мы являемся официальными представителями многих торговых марок. 
+                        p Короткий текст о преимуществах, таких как: быстрая доставка, бонусы и подарки, надёжные поставщики, низкие цены, программа лояльности, сезонные скидки, широкий ассортимент, гарантия на все товары
+
+        section.feedback 
+            .container 
+                .feedback__wrapper 
+                    .feedback__picture 
+                        img(src="img/mobile-feedback.png" alt="")
+                    .feedback__content 
+                        h2.feedback__title Напишите нам
+                        .feedback__text
+                            p Мы всегда рады общению с нашими клиентами. Если у вас есть какие-либо пожелания, предложения, замечания, касающиеся работы нашего Интернет-магазина — пишите нам, и мы с благодарностью примем ваше мнение во внимание
+                        button.feedback__button.button-main.writeBtn Написать
+
+        include modals/modal-feedback.pug
+        include modals/modal-confirm.pug
+        include modals/modal-recovery.pug
+        include modals/modal-repair.pug
+        include modals/modal-login.pug
+        include modals/modal-register.pug
+        include modules/burger-menu.pug
+
+        include modules/footer.pug
+        include modules/script.pug

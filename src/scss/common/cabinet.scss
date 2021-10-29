@@ -1,0 +1,25 @@
+.cabinet__wrapper {
+  display: flex;
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+.cabinet__inner {
+  padding: 30px;
+  @media (max-width: 1279px) {
+    padding: 20px;
+  }
+  @media (max-width: 767px) {
+    padding: 0;
+  }
+}
+
+.cabinet__inner-order {
+  padding: 0 30px;
+  @media (max-width: 1279px) {
+    padding: 0 20px;
+  }
+  @media (max-width: 767px) {
+    padding: 10px 0;
+  }
+}

@@ -1,0 +1,221 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header.pug
+
+        section.breadcrumbs 
+            h2.visually-hidden Навигация
+            .container 
+                ul.breadcrumbs__list
+                    li 
+                        a(href="index.html") Главная 
+                    li /
+                    li 
+                        a(href="/") Каталог 
+                    li /
+                    li 
+                        a.breadcrumbs__current Название товара
+
+        section.basket
+            .container 
+                h2.basket__title Моя корзина
+                .basket__wrapper 
+                    .basket__order.basket-order
+                        .catalog__card.card-catalog.basket-order__item(href="/")
+                            .cabinet-order__card
+                                .card-catalog__picture 
+                                    img(src="img/catalog/item1.jpg" alt="")
+                                .cabinet-order__description
+                                    .card-catalog__price 
+                                        span.card-catalog__price-current 10 390 руб.
+                                    p.card-catalog__name Орли “Вернис”
+                                    p.card-catalog__subtitle Лак для ногтей
+                                    .card-catalog__reviews.card-catalog__reviews--mode
+                                        .card-catalog__likes 
+                                            img(src="img/icons/star.svg" alt="")
+                                            span 4.8
+                                        p.card-catalog__numbers 146 отзывов
+                                    .card-catalog__count
+                                        button
+                                            img(src="img/icons/count-minus.svg" alt="")
+                                        span 1
+                                        button
+                                            img(src="img/icons/count-plus.svg" alt="")
+                                    <svg class="card-catalog__favorite" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.0002 25C-10.9583 8.78886 5.62343 -3.86391 12.7252 2.82887C12.819 2.91687 12.9112 3.00807 13.0002 3.10247C13.0884 3.00816 13.1801 2.91742 13.2752 2.83047C20.3754 -3.86711 36.9588 8.78726 13.0002 25Z" stroke="#898989"/></svg>
+                        .catalog__card.card-catalog.basket-order__item(href="/")
+                            .cabinet-order__card
+                                .card-catalog__picture 
+                                    img(src="img/catalog/item1.jpg" alt="")
+                                .cabinet-order__description
+                                    .card-catalog__price 
+                                        span.card-catalog__price-current 10 390 руб.
+                                    p.card-catalog__name Орли “Вернис”
+                                    p.card-catalog__subtitle Лак для ногтей
+                                    .card-catalog__reviews.card-catalog__reviews--mode 
+                                        .card-catalog__likes 
+                                            img(src="img/icons/star.svg" alt="")
+                                            span 4.8
+                                        p.card-catalog__numbers 146 отзывов
+                                    .card-catalog__count
+                                        button
+                                            img(src="img/icons/count-minus.svg" alt="")
+                                        span 1
+                                        button
+                                            img(src="img/icons/count-plus.svg" alt="")
+                                    <svg class="card-catalog__favorite" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.0002 25C-10.9583 8.78886 5.62343 -3.86391 12.7252 2.82887C12.819 2.91687 12.9112 3.00807 13.0002 3.10247C13.0884 3.00816 13.1801 2.91742 13.2752 2.83047C20.3754 -3.86711 36.9588 8.78726 13.0002 25Z" stroke="#898989"/></svg>
+                        .catalog__card.card-catalog.basket-order__item(href="/")
+                            .cabinet-order__card
+                                .card-catalog__picture 
+                                    img(src="img/catalog/item1.jpg" alt="")
+                                .cabinet-order__description
+                                    .card-catalog__price 
+                                        span.card-catalog__price-current 10 390 руб.
+                                    p.card-catalog__name Орли “Вернис”
+                                    p.card-catalog__subtitle Лак для ногтей
+                                    .card-catalog__reviews.card-catalog__reviews--mode 
+                                        .card-catalog__likes 
+                                            img(src="img/icons/star.svg" alt="")
+                                            span 4.8
+                                        p.card-catalog__numbers 146 отзывов
+                                    .card-catalog__count
+                                        button
+                                            img(src="img/icons/count-minus.svg" alt="")
+                                        span 1
+                                        button
+                                            img(src="img/icons/count-plus.svg" alt="")
+                                    <svg class="card-catalog__favorite" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.0002 25C-10.9583 8.78886 5.62343 -3.86391 12.7252 2.82887C12.819 2.91687 12.9112 3.00807 13.0002 3.10247C13.0884 3.00816 13.1801 2.91742 13.2752 2.83047C20.3754 -3.86711 36.9588 8.78726 13.0002 25Z" stroke="#898989"/></svg>
+                    .basket__description.basket-description
+                        .basket-description__items 
+                            //- description item
+                            .basket-descriotion__item.description-item.description-item__main 
+                                .description-item__header 
+                                    .description-item__title Стоимость заказа:
+                                    .description-item__price 99 999 ₽
+                                .description-item__content
+                                    .description-item__row
+                                        label.descriotion-item__label(for="id1") Введите промокод
+                                        input(type="text" id="id1")
+                                    .description-item__buttons 
+                                        a.description-item__button.description-item__button--next.button-main(href="") Оформить заказ
+                            //- description item
+                            .basket-descriotion__item.description-item 
+                                .description-item__header 
+                                    .description-item__title Регион доставки
+                                .description-item__content
+                                    .description-item__row
+                                        label.descriotion-item__label(for="id2") Местоположение
+                                        .description-item__input.description-item__input--mode
+                                            img.description-item__picture-search(src="img/icons/search.svg" alt="place-search")
+                                            input(type="text" id="id2" placeholder="Курск, Центр, Россия")
+                                            img.description-item__picture-cross(src="img/icons/cross.svg" alt="cross")
+                                    .description-item__row
+                                        label.descriotion-item__label(for="id3") Почтовый индекс
+                                        .description-item__input
+                                            input(type="text" id="id3" placeholder="305 000")
+                                            img.description-item__picture-cross(src="img/icons/cross.svg" alt="cross")
+                                    .description-item__text
+                                        p Выберите свой город в списке. Если вы не нашли свой город, выберите “другое местоположение”.
+                                    .description-item__buttons 
+                                        a.description-item__button.description-item__button--prev.button-main(href="") Назад
+                                        a.description-item__button.description-item__button--next.button-main(href="") Далее
+                            //- description item
+                            .basket-descriotion__item.description-item 
+                                .description-item__header 
+                                    .description-item__title Доставка
+                                .description-item__content
+                                    label.descriotion-item__label Как вы хотите получить заказ?
+                                    .description-item__radios
+                                        .description-item__row
+                                            input(type="radio" id='radio1' name="delivery")
+                                            label(for="radio1") Забрать из магазина
+                                        .description-item__row
+                                            input(type="radio" id='radio2' name="delivery")
+                                            label(for="radio2") Доставкой
+
+                                    .description-item__buttons 
+                                        a.description-item__button.description-item__button--prev.button-main(href="") Назад
+                                        a.description-item__button.description-item__button--next.button-main(href="") Далее
+
+                            //- description item
+                            .basket-descriotion__item.description-item 
+                                .description-item__header   
+                                    .description-item__title Способ оплаты
+                                .description-item__content
+                                    .description-item__radios.description-item__radios--column 
+                                        input(type="radio" id="radio3" name="pay")
+                                        label(for="radio3") Банковская карта
+                                        input(type="radio" id="radio4" name="pay")
+                                        label(for="radio4") Наличные курьеру
+                                        input(type="radio" id="radio5" name="pay")
+                                        label(for="radio5") Яндекс.Касса
+                                        input(type="radio" id="radio6" name="pay")
+                                        label(for="radio6") Наложенный платёж
+                                    .description-item__buttons 
+                                        a.description-item__button.description-item__button--prev.button-main(href="") Назад
+                                        a.description-item__button.description-item__button--next.button-main(href="") Далее
+
+                            //- description item
+                            .basket-descriotion__item.description-item 
+                                .description-item__header   
+                                    .description-item__title Покупатель
+                                .description-item__content
+                                    .descriotion-item__inputs 
+                                        input(type="text" placeholder="Ф. И. О.")
+                                        input(type="text" placeholder="Email")
+                                        input(type="text" placeholder="Телефон")
+                                        textarea(placeholder="Адрес доставки")
+                                        textarea(placeholder="Комментарии к заказу")
+                                    .description-item__consent 
+                                        input(type="checkbox" id="check-cons")
+                                        label(for="check-cons") Нажимая «Оформить заказ», вы соглашаетесь с политикой конфиденциальности и соглашаетесь на обработку персональных данных
+                                    .description-item__buttons 
+                                        a.description-item__button.description-item__button--prev.button-main(href="") Назад
+                                        a.description-item__button.button-main#showModalOrder(href="") Оформить заказ
+
+
+
+
+
+
+
+                    //- .basket__description.basket-description 
+                    //-     .basket-description__title
+                    //-         p Стоимость вашего заказа:
+                    //-         p 99 999 ₽ 
+                    //-     .basket-description__delivery-title Как вы хотите получить заказ?
+                    //-     form.basket-descrition__form
+                    //-         p.basket-description__item
+                    //-             input(type="radio" id="shopCheck" name="delivery" checked)
+                    //-             label(for="shopCheck") Забрать из магазина
+                    //-         p.basket-description__item
+                    //-             input(type="radio" id="deliveryCheck" name="delivery")
+                    //-             label(for="deliveryCheck") Доставкой
+                    //-         .basket-description__shop
+                    //-             p.basket-description__item
+                    //-                 input(type="radio" id="check3" name="address" checked)
+                    //-                 label(for="check3") Магазин по адресу Карла Маркса, 15
+                    //-             p.basket-description__item
+                    //-                 input(type="radio" id="check4" name="address")
+                    //-                 label(for="check4") Магазин по адресу проспект Вячеслава Клыкова, 16
+                    //-         .basket-description__delivery.basket-descrition__textarea
+                    //-             textarea(placeholder="Введите адрес доставки")
+                    //-         .basket-description__text
+                    //-             p После оплаты заказа менеджер свяжется с вами для уточнения всех подробностей заказа.  
+                    //-             p Для оплаты заказа вы будете перенаправлены на странницу банка. 
+                    //-             p Ознакомьтесь с Правилами доставки.
+                    //-         button.button-main(type="submit") Оплатить
+
+
+
+
+
+
+
+
+
+        include modals/modal-feedback.pug
+        include modals/modal-order.pug
+        include modules/burger-menu.pug
+        include modules/footer.pug
+        include modules/script.pug

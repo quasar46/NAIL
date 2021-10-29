@@ -1,0 +1,9 @@
+.brends__item {
+  text-align: center;
+  img {
+    display: inline;
+    @media (max-width: 767px) {
+      width: 60px;
+    }
+  }
+}

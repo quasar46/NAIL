@@ -1,0 +1,74 @@
+header.header.container 
+    .header__wrapper
+        .header__burger.burger#burger
+            img(src="img/icons/burger.svg" alt="мобильное меню")
+        a.header__logo.logo(href="index.html")
+            img(src="img/logo.svg" alt="логотип")
+        .header__search 
+            input(type="text" placeholder="Что вы ищите?")
+            button Найти
+        .header__actions.header-actions
+            a(href="cabinet.html").header-actions__item 
+                .header-actions__picture
+                    img(src="img/icons/user.svg" alt="войти")
+                p Войти
+            a(href="favorite.html").header-actions__item 
+                .header-actions__picture
+                    img(src="img/icons/favorite.svg" alt="избранное")
+                p Избранное
+            a(href="basket.html").header-actions__item
+                .header-actions__picture
+                    img(src="img/icons/basket.svg" alt="корзина")
+                    i 99
+                p Корзина
+        i.br
+
+    .header__menu.header-menu 
+        ul.header-menu__list 
+            li
+                //- a(href="main-catalog.html") Каталог
+                a(href="main-catalog.html") Каталог
+                .header-menu__list-sublist 
+                    ul
+                        li
+                            a(href="") Распродажа
+                        li
+                            a(href="") Аппараты
+                        li
+                            a(href="") Акции
+                        li
+                            a(href="") Аксессуары
+                        li
+                            a(href="") Новинки
+                        li
+                            a(href="") Аэрография
+                        li
+                            a(href="") Хиты продаж
+                        li
+                            a(href="") Боры, фрезы, колпачки
+                        li
+                            a(href="") Брови
+                        li
+                            a(href="") Гель
+                        li
+                            a(href="") Акрил
+                        li
+                            a(href="") Гель-лак
+                        li
+                            a(href="") Акригель, полигель
+                        li
+                            a(href="") Дизайн
+            li
+                a(href="sales.html") Акции
+            li
+                a(href="") Покупка в рассрочку
+            li
+                a(href="bonus.html") Бонусная программа
+            li
+                a(href="delivery.html") Доставка и оплата
+            li
+                a(href="about.html") О нас
+            li
+                a(href="contacts.html") Контакты
+            li
+                a(href="articles.html") Статьи

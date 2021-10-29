@@ -1,0 +1,23 @@
+.main-catalog__wrapper {
+  display: flex;
+}
+
+.main-catalog__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-catalog__button {
+  color: #898989;
+  border-color: #898989;
+  align-self: center;
+}
+
+.main-catalog__cards {
+  margin-bottom: 120px;
+  margin: 0 -12px;
+  @media (max-width: 767px) {
+    margin: 0 -5px;
+  }
+}

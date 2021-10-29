@@ -1,0 +1,27 @@
+.advantages-about__wrapper {
+  max-width: 804px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.advantages-about__title {
+  text-align: center;
+  @media (max-width: 767px) {
+    text-align: left;
+  }
+}
+
+.advantages-about__content {
+  p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #4e4e4e;
+    line-height: 150%;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @media (max-width: 1279px) {
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,77 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header.pug
+
+        section.breadcrumbs 
+            h2.visually-hidden Навигация
+            .container 
+                ul.breadcrumbs__list
+                    li 
+                        a(href="index.html") Главная 
+                    li /
+                    li 
+                        a.breadcrumbs__current Статьи
+
+        section.articles 
+            .container 
+                h2.articles__title Статьи
+                .articles__wrapper 
+                    .articles__item.itemHidden.articles-item.current
+                        img(src="img/articles/item1.jpg" alt="")
+                        .articles-item__footer
+                            p.articles-item__title Заголовок новости или статьи
+                            p.articles-item__text Текст новости, точнее краткое содержание статьи и ещё текста для объёма раз, два, три.
+                            a(href="article.html").button-main.articles-item__button Читать
+                    .articles__item.itemHidden.articles-item.current 
+                        img(src="img/articles/item2.jpg" alt="")
+                        .articles-item__footer
+                            p.articles-item__title Заголовок новости или статьи
+                            p.articles-item__text Текст новости, точнее краткое содержание статьи и ещё текста для объёма раз, два, три.
+                            a(href="article.html").button-main.articles-item__button Читать
+                    .articles__item.itemHidden.articles-item.current 
+                        img(src="img/articles/item1.jpg" alt="")
+                        .articles-item__footer
+                            p.articles-item__title Заголовок новости или статьи
+                            p.articles-item__text Текст новости, точнее краткое содержание статьи и ещё текста для объёма раз, два, три.
+                            a(href="article.html").button-main.articles-item__button Читать
+                    .articles__item.itemHidden.articles-item.current 
+                        img(src="img/articles/item2.jpg" alt="")
+                        .articles-item__footer
+                            p.articles-item__title Заголовок новости или статьи
+                            p.articles-item__text Текст новости, точнее краткое содержание статьи и ещё текста для объёма раз, два, три.
+                            a(href="article.html").button-main.articles-item__button Читать
+                    .articles__item.itemHidden.articles-item.hidden 
+                        img(src="img/articles/item1.jpg" alt="")
+                        .articles-item__footer
+                            p.articles-item__title Заголовок новости или статьи
+                            p.articles-item__text Текст новости, точнее краткое содержание статьи и ещё текста для объёма раз, два, три.
+                            a(href="article.html").button-main.articles-item__button Читать
+                    .articles__item.itemHidden.articles-item.hidden 
+                        img(src="img/articles/item2.jpg" alt="")
+                        .articles-item__footer
+                            p.articles-item__title Заголовок новости или статьи
+                            p.articles-item__text Текст новости, точнее краткое содержание статьи и ещё текста для объёма раз, два, три.
+                            a(href="article.html").button-main.articles-item__button Читать
+                    .articles__item.itemHidden.articles-item.hidden 
+                        img(src="img/articles/item1.jpg" alt="")
+                        .articles-item__footer
+                            p.articles-item__title Заголовок новости или статьи
+                            p.articles-item__text Текст новости, точнее краткое содержание статьи и ещё текста для объёма раз, два, три.
+                            a(href="article.html").button-main.articles-item__button Читать
+                    .articles__item.itemHidden.articles-item.hidden 
+                        img(src="img/articles/item2.jpg" alt="")
+                        .articles-item__footer
+                            p.articles-item__title Заголовок новости или статьи
+                            p.articles-item__text Текст новости, точнее краткое содержание статьи и ещё текста для объёма раз, два, три.
+                            a(href="article.html").button-main.articles-item__button Читать
+
+                    button.button-main.articles__button#showMore Показать ещё
+
+
+
+        include modals/modal-feedback.pug
+        include modules/burger-menu.pug
+        include modules/footer.pug
+        include modules/script.pug

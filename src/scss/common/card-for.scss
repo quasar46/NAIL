@@ -1,0 +1,30 @@
+.card-for {
+  max-width: 390px;
+  width: 100%;
+  flex: 1 0 auto;
+  margin-right: 24px;
+  @media (max-width: 1279px) {
+    max-width: 520px;
+    margin-right: 0;
+  }
+  @media (max-width: 767px) {
+    order: 0;
+  }
+}
+
+.card-for__item {
+  &.slick-slide {
+    display: flex;
+    justify-content: center;
+    &.slick-slide {
+      @media (max-width: 767px) {
+        height: 354px;
+        display: flex;
+        justify-content: center;
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
+}

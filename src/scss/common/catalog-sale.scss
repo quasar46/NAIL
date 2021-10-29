@@ -1,0 +1,123 @@
+.catalog-sale {
+  .container {
+    @media (max-width: 767px) {
+      padding: 0;
+    }
+  }
+}
+
+.catalog-sale__wrapper {
+  display: flex;
+  @media (max-width: 1279px) {
+    flex-direction: column;
+  }
+}
+
+.catalog-sale__preview {
+  position: relative;
+  background: linear-gradient(180deg, #f29ac7 39.06%, #ffd1e9 100%);
+  padding-top: 70px;
+  border-radius: 8px;
+  margin-right: 24px;
+  max-width: 390px;
+  width: 100%;
+  @media (max-width: 1279px) {
+    max-width: 100%;
+    height: 273px;
+    margin-bottom: 16px;
+    margin-right: 0;
+  }
+  @media (max-width: 767px) {
+    border-radius: 0;
+    height: 210px;
+    padding-top: 19px;
+  }
+}
+
+.catalog-sale__picture {
+  position: relative;
+  img {
+    position: relative;
+    bottom: -50px;
+    left: -40px;
+    @media (max-width: 1279px) {
+      bottom: 0;
+      left: 0;
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  @media (max-width: 1279px) {
+    position: absolute;
+    right: 104px;
+    width: 129px;
+    height: 285px;
+    top: 0;
+  }
+  @media (max-width: 767px) {
+    width: auto;
+    right: 22px;
+    right: 0;
+    top: -20px;
+    height: 250px;
+  }
+}
+
+.catalog-sale__percent {
+  position: absolute;
+  top: 50px;
+  right: 55px;
+  width: 181px;
+  height: 181px;
+  border-radius: 50%;
+  background-color: #0075df;
+  color: #ffffff;
+  font-size: 87px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 1279px) {
+    width: 155px;
+    height: 155px;
+    font-size: 72px;
+    right: 115px;
+  }
+  @media (max-width: 767px) {
+    width: 105px;
+    height: 105px;
+    font-size: 48px;
+    bottom: 40px;
+    top: auto;
+    right: 170px;
+  }
+}
+
+.catalog-sale__title {
+  color: #ffffff;
+  font-size: 36px;
+  margin-bottom: 25px;
+  padding-left: 50px;
+  @media (max-width: 1279px) {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  @media (max-width: 767px) {
+    font-size: 24px;
+    padding-left: 38px;
+  }
+}
+
+.catalog-sale__subtitle {
+  color: #ffffff;
+  font-size: 24px;
+  padding-left: 50px;
+  @media (max-width: 1279px) {
+    font-size: 18px;
+  }
+  @media (max-width: 767px) {
+    font-size: 14px;
+    padding-left: 38px;
+  }
+}

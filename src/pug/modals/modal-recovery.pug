@@ -1,0 +1,13 @@
+.overlay#modal-recovery
+    .modal.modal__recovery
+        .modal__closed.modal__closed--mode
+            img(src="img/icons/cross.svg" alt="")
+        h2.modal__title.title Восстановить пароль
+        .modal__text 
+            p Введите свой адрес электронной почты и мы отправим вам инструкцию по восстановлению пароля
+        form.modal__form
+            p
+                input(type="text" placeholder="Ваш email")
+            p.modal__capcha
+                img(src="img/capcha.png" alt="")
+            button.button-main.modal__button(type="submit") Отправить

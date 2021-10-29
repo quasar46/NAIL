@@ -1,0 +1,11 @@
+.map {
+  .container {
+    @media (max-width: 1279px) {
+      padding: 0;
+    }
+  }
+}
+
+.map__content {
+  height: 380px;
+}

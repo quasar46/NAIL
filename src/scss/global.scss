@@ -1,0 +1,94 @@
+@import "utils/stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import "./node_modules/normalize.css/normalize";
+@import "utils/slick";
+@import "utils/variables";
+@import "utils/jquery.formstyler";
+@import "utils/jquery.formstyler.theme";
+@import "mixins/media";
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  line-height: 1.2;
+  font-size: 16px;
+  font-family: $fontBase;
+  color: $colorBase;
+}
+
+main {
+  flex: 1;
+}
+
+.container {
+  max-width: 1279px;
+  padding: 0 35px;
+  width: 100%;
+  margin: 0 auto;
+  @media (max-width: 767px) {
+    padding: 0 15px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+section {
+  margin-bottom: 120px;
+  @media (max-width: 1288px) {
+    margin-bottom: 60px;
+  }
+}
+
+input,
+textarea {
+  &:focus {
+    outline: none;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}

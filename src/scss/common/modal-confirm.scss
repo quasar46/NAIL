@@ -1,0 +1,16 @@
+.modal-confirm {
+  .modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.modal-confirm__text {
+  text-align: center;
+  font-size: 16px;
+  line-height: 160%;
+  color: #898989;
+  max-width: 317px;
+  margin: 0 auto;
+}

@@ -1,0 +1,10 @@
+#tabs .hide {
+  display: none;
+}
+#tabs .show {
+  display: block;
+}
+
+.tabs__content {
+  flex: 1 0 auto;
+}

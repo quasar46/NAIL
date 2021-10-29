@@ -1,0 +1,20 @@
+.overlay#modal-review
+    .modal.modal__review
+        .modal__closed 
+            img(src="img/icons/cross.svg" alt="")
+        h2.modal__title.title Оцените товар
+        .card-aside__stars.card-aside__stars--modal 
+            <svg class="active" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#EBEBEB"/></svg>
+            <svg class="active" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#EBEBEB"/></svg>
+            <svg class="active" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#EBEBEB"/></svg>
+            <svg class="active" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#EBEBEB"/></svg>
+            <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#EBEBEB"/></svg>
+        .modal__textarea 
+            textarea(placeholder="Введите ваш отзыв")
+        .modal__attach
+            input(type="file" id="file" value="Добавить фото").brif__input
+            label(for="file")
+                span.modal__attach-picture
+                    img(src="img/icons/attach.svg" alt="")
+                span.modal__attach-text Добавить фото
+        button.button-main.modal-review__button(type="submit") Оставить отзыв

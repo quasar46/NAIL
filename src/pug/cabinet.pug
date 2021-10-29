@@ -1,0 +1,174 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header.pug
+
+        section.breadcrumbs 
+            h2.visually-hidden Навигация
+            .container 
+                ul.breadcrumbs__list
+                    li 
+                        a(href="index.html") Главная 
+                    li /
+                    li 
+                        a.breadcrumbs__current Профиль
+
+        section.cabinet 
+            h2.visually-hidden Личный кабинет
+            .container 
+                .cabinet__wrapper#tabs 
+                    .cabinet__aside.cabinet-aside
+                        ul.cabinet-aside__list.tabs__nav 
+                            li.cabinet-aside__item
+                                a.tab.active  Профиль
+                            li.cabinet-aside__item
+                                a.tab  Заказы
+                            li.cabinet-aside__item
+                                a(href="index.html") Выход
+                    .tabs__content
+
+                        .cabinet__profile.cabinet-profile.tabContent 
+                            .cabinet-portfolio__item
+                                p.cabinet-profile__title Контакты
+                                form.cabinet-profile__form 
+                                    p
+                                        input(type="text" placeholder="Имя")
+                                    p
+                                        input(type="text" placeholder="Ваш город:")
+                                    p
+                                        input(type="text" placeholder="Телефон:")
+                                    p
+                                        input(type="text" placeholder="Email")
+                            .cabinet-portfolio__item 
+                                p.cabinet-profile__title Номер бонусной карты
+                                p.cabinet-portfolio__text 0000 0000 0000 0001
+                            .cabinet-portfolio__item.cabinet-portfolio__item--mode
+                                p.cabinet-profile__title Изменить пароль
+                                form.cabinet-profile__form
+                                    p
+                                        input(type="text" placeholder="Введите новый пароль")
+                                    p
+                                        input(type="text" placeholder="Повторите новый пароль")
+
+                            button.button-main Сохранить изменения
+                        .cabinet__content.cabinet-content.tabContent 
+                            ul.cabinet-content__list
+                                li.cabinet-content__order.cabinet-order
+                                    .cabinet__inner
+                                        p.cabinet-order__title У вас нет заказов
+                                        p.cabinet-order__text Если возникла ошибка обратитесь к нашим специалистам по номеру +7 (999) 999-99-99 или напишите нам.
+                                        button.button-main.cabinet-order__button.writeBtn Написать
+                                li.cabinet-content__order.cabinet-order 
+                                    .cabinet-order__caption.cabinet__inner
+                                        .cabinet-order__col
+                                            p.cabinet-order__title Заказ № 999999999
+                                            a.cabinet-order__link.statusOrder Статус заказа
+                                        .cabinet-order__col.cabinet-order__buttons 
+                                            button.button-main Повторить заказ
+                                            button.button-main.orderShow.current Подробнее
+                                    .cabinet-order__content
+                                        ul.cabinet-order__list
+                                            li.cabinet__inner-order
+                                                .catalog__card.card-catalog.cabinet-order__item(href="/")
+                                                    .cabinet-order__card
+                                                        .card-catalog__picture 
+                                                            img(src="img/catalog/item1.jpg" alt="")
+                                                        .cabinet-order__description
+                                                            .card-catalog__price 
+                                                                span.card-catalog__price-current 10 390 руб.
+                                                            .cabinet-order__amount.cabinet-order__amount--mobile
+                                                                p Количество: 
+                                                                    span 999 шт.
+                                                            p.card-catalog__name Орли “Вернис”
+                                                            p.card-catalog__subtitle Лак для ногтей
+                                                            .card-catalog__reviews 
+                                                                .card-catalog__likes 
+                                                                    img(src="img/icons/star.svg" alt="")
+                                                                    span 4.8
+                                                                p.card-catalog__numbers 146 отзывов
+                                                .cabinet-order__amount 
+                                                    p Количество: 
+                                                        span 999 шт.
+                                            li.cabinet__inner-order
+                                                .catalog__card.card-catalog.cabinet-order__item(href="/")
+                                                    .cabinet-order__card
+                                                        .card-catalog__picture 
+                                                            img(src="img/catalog/item1.jpg" alt="")
+                                                        .cabinet-order__description
+                                                            .card-catalog__price 
+                                                                span.card-catalog__price-current 10 390 руб.
+                                                            .cabinet-order__amount.cabinet-order__amount--mobile
+                                                                p Количество: 
+                                                                    span 999 шт.
+                                                            p.card-catalog__name Орли “Вернис”
+                                                            p.card-catalog__subtitle Лак для ногтей
+                                                            .card-catalog__reviews 
+                                                                .card-catalog__likes 
+                                                                    img(src="img/icons/star.svg" alt="")
+                                                                    span 4.8
+                                                                p.card-catalog__numbers 146 отзывов
+                                                .cabinet-order__amount 
+                                                    p Количество: 
+                                                        span 999 шт.
+                                li.cabinet-content__order.cabinet-order 
+                                    .cabinet-order__caption.cabinet__inner
+                                        .cabinet-order__col
+                                            p.cabinet-order__title Заказ № 999999999
+                                            a.cabinet-order__link.statusOrder Статус заказа
+                                        .cabinet-order__col.cabinet-order__buttons 
+                                            button.button-main Повторить заказ
+                                            button.button-main.orderShow Скрыть
+                                    .cabinet-order__content.active
+                                        ul.cabinet-order__list
+                                            li.cabinet__inner-order
+                                                .catalog__card.card-catalog.cabinet-order__item(href="/")
+                                                    .cabinet-order__card
+                                                        .card-catalog__picture 
+                                                            img(src="img/catalog/item1.jpg" alt="")
+                                                        .cabinet-order__description
+                                                            .card-catalog__price 
+                                                                span.card-catalog__price-current 10 390 руб.
+                                                            .cabinet-order__amount.cabinet-order__amount--mobile
+                                                                p Количество: 
+                                                                    span 999 шт.
+                                                            p.card-catalog__name Орли “Вернис”
+                                                            p.card-catalog__subtitle Лак для ногтей
+                                                            .card-catalog__reviews 
+                                                                .card-catalog__likes 
+                                                                    img(src="img/icons/star.svg" alt="")
+                                                                    span 4.8
+                                                                p.card-catalog__numbers 146 отзывов
+                                                .cabinet-order__amount 
+                                                    p Количество: 
+                                                        span 999 шт.
+                                            li.cabinet__inner-order
+                                                .catalog__card.card-catalog.cabinet-order__item(href="/")
+                                                    .cabinet-order__card
+                                                        .card-catalog__picture 
+                                                            img(src="img/catalog/item1.jpg" alt="")
+                                                        .cabinet-order__description
+                                                            .card-catalog__price 
+                                                                span.card-catalog__price-current 10 390 руб.
+                                                            .cabinet-order__amount.cabinet-order__amount--mobile
+                                                                p Количество: 
+                                                                    span 999 шт.
+                                                            p.card-catalog__name Орли “Вернис”
+                                                            p.card-catalog__subtitle Лак для ногтей
+                                                            .card-catalog__reviews 
+                                                                .card-catalog__likes 
+                                                                    img(src="img/icons/star.svg" alt="")
+                                                                    span 4.8
+                                                                p.card-catalog__numbers 146 отзывов
+                                                .cabinet-order__amount 
+                                                    p Количество: 
+                                                        span 999 шт.
+
+
+
+
+        include modals/modal-feedback.pug
+        include modules/burger-menu.pug
+        include modules/footer.pug
+        include modules/script.pug
+        script(src="js/tabs.js")

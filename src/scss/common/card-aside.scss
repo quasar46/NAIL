@@ -1,0 +1,172 @@
+.card-aside__caption {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+  @media (max-width: 1279px) {
+    margin-bottom: 20px;
+  }
+}
+
+.card-aside__stars {
+  display: flex;
+  align-items: center;
+  svg {
+    &.active {
+      path {
+        fill: #f8acd3;
+      }
+    }
+  }
+  span {
+    margin-left: 15px;
+    color: rgba(11, 11, 11, 0.9);
+    font-size: 16px;
+    @media (max-width: 767px) {
+      font-size: 14px;
+    }
+  }
+  &--modal {
+    justify-content: center;
+    margin-bottom: 30px;
+    svg {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0;
+      }
+      @media (max-width: 1279px) {
+        width: 36px;
+        height: 36px;
+      }
+    }
+  }
+}
+
+.card-aside__article {
+  color: #898989;
+  font-size: 16px;
+  @media (max-width: 767px) {
+    font-size: 14px;
+  }
+}
+
+.card-aside__name {
+  font-size: 36px;
+  color: rgba(11, 11, 11, 0.9);
+  margin-bottom: 37px;
+  @media (max-width: 1279px) {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+}
+
+.card-aside__price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  @media (max-width: 1279px) {
+    margin-bottom: 20px;
+  }
+}
+
+.card-aside__price-old {
+  font-size: 24px;
+  color: #898989;
+  text-decoration: line-through;
+  margin-right: 80px;
+  @media (max-width: 1279px) {
+    margin-right: 60px;
+  }
+}
+
+.card-aside__price-current {
+  font-size: 30px;
+  color: #4e4e4e;
+  @media (max-width: 1279px) {
+    font-size: 24px;
+  }
+}
+
+.card-aside__buttons {
+  display: flex;
+  margin-bottom: 60px;
+  button {
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
+    @media (max-width: 1279px) {
+      margin-right: 0;
+    }
+  }
+  @media (max-width: 1279px) {
+    margin-bottom: 40px;
+    justify-content: space-between;
+  }
+  @media (max-width: 767px) {
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+}
+
+.card-aside__button {
+  @media (max-width: 1279px) {
+    width: calc(100% / 2 - 10px);
+  }
+  @media (max-width: 767px) {
+    width: 100%;
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.card-aside-description__name {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #3a3e46;
+}
+
+.card-aside-description__text {
+  font-size: 16px;
+  color: #4e4e4e;
+  line-height: 160%;
+  margin-bottom: 20px;
+  @media (max-width: 1279px) {
+    font-size: 14px;
+  }
+}
+
+.card-aside-description__list {
+  li {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #4e4e4e;
+    margin-bottom: 20px;
+    p {
+      &:first-child {
+        color: rgba(11, 11, 11, 0.9);
+      }
+    }
+    span {
+      flex: 1 0 auto;
+      height: 1px;
+      background-image: url("../img/icons/line.svg");
+      background-size: cover;
+      margin: 0 14px;
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+    @media (max-width: 1279px) {
+      font-size: 14px;
+    }
+    @media (max-width: 767px) {
+      justify-content: space-between;
+      font-size: 13px;
+    }
+  }
+}

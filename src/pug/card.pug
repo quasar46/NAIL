@@ -1,0 +1,176 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header.pug
+
+        section.breadcrumbs 
+            h2.visually-hidden Навигация
+            .container 
+                ul.breadcrumbs__list
+                    li 
+                        a(href="index.html") Главная 
+                    li /
+                    li 
+                        a(href="/") Каталог 
+                    li /
+                    li 
+                        a.breadcrumbs__current Название товара
+
+        section.card
+            h2.visually-hidden Карточка
+            .container 
+                .card__wrapper
+                    .card__slider 
+                        ul.slider-nav.card__nav.card-nav 
+                            .card-nav__item
+                                img(src="img/card/item-nav1.png" alt="")
+                            .card-nav__item
+                                img(src="img/card/item-nav1.png" alt="")
+                            .card-nav__item
+                                img(src="img/card/item-nav1.png" alt="")
+                            .card-nav__item
+                                img(src="img/card/item-nav1.png" alt="")
+                        ul.slider-for.card__for.card-for 
+                            .card-for__item
+                                img(src="img/card/card-for1.png" alt="")
+                            .card-for__item
+                                img(src="img/card/card-for1.png" alt="")
+                            .card-for__item
+                                img(src="img/card/card-for1.png" alt="")
+                            .card-for__item
+                                img(src="img/card/card-for1.png" alt="")
+
+                    .card__aside.card-aside 
+                        .card-aside__caption 
+                            .card-aside__stars 
+                                <svg class="active" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#EBEBEB"/></svg>
+                                <svg class="active" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#EBEBEB"/></svg>
+                                <svg class="active" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#EBEBEB"/></svg>
+                                <svg class="active" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#EBEBEB"/></svg>
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#EBEBEB"/></svg>
+                                span 4.1
+                            .card-aside__article
+                                p Артикул: 
+                                    span 123456
+                        p.card-aside__name Лак для ногтей ORLY розовый
+                        .card-aside__price 
+                            p.card-aside__price-old 99 999 ₽
+                            p.card-aside__price-current 99 999 ₽
+                        .card-aside__buttons 
+                            button.button-main.card-aside__button В корзину
+                            button.button-main.card-aside__button В избранное
+                        .card-aside__description.card-aside-description
+                            p.card-aside-description__name Описание
+                            p.card-aside-description__text Текст с описанием и преимуществами выбранной позиции. Можно, так сказать, продающий текст, который, кстати, очень важен для стимулирования покупателя.
+                            ul.card-aside-description__list 
+                                li
+                                    p Характеристика 1:
+                                    span 
+                                    p Состовляющая характеристики
+                                li
+                                    p Характеристика 2:
+                                    span 
+                                    p Состовляющая характеристики
+                                li
+                                    p Характеристика 3:
+                                    span 
+                                    p Состовляющая характеристики
+                                li
+                                    p Характеристика 4:
+                                    span 
+                                    p Состовляющая характеристики
+
+        section.reviews 
+            .container 
+                h2.reviews__title Отзывы
+                .reviews__wrapper
+                    .reviews__item.itemHidden.reviews-item.current
+                        img(src="img/reviews/avatar.png" alt="")
+                        .reviews-item__header
+                            .reviews-item__aside
+                                p.reviews-item__name Фатима
+                                date.reviews-item__date 31 февраля 2022 г.
+                            .card-aside__stars 
+                                <svg class="active" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#EBEBEB"/></svg>
+                                <svg class="active" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#EBEBEB"/></svg>
+                                <svg class="active" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#EBEBEB"/></svg>
+                                <svg class="active" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#EBEBEB"/></svg>
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#EBEBEB"/></svg>
+                                span 4.1
+                        .reviews-item__text 
+                            p Текст с описанием и преимуществами выбранной позиции. Можно, так сказать, продающий текст, который, кстати, очень важен для стимулирования покупателя.
+                    .reviews__item.itemHidden.reviews-item.hidden 
+                        img(src="img/reviews/avatar.png" alt="")
+                        .reviews-item__header
+                            .reviews-item__aside
+                                p.reviews-item__name Фатима
+                                date.reviews-item__date 31 февраля 2022 г.
+                            .card-aside__stars 
+                                <svg class="active" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#EBEBEB"/></svg>
+                                <svg class="active" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#EBEBEB"/></svg>
+                                <svg class="active" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#EBEBEB"/></svg>
+                                <svg class="active" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#EBEBEB"/></svg>
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#EBEBEB"/></svg>
+                                span 4.1
+                        .reviews-item__text 
+                            p Текст с описанием и преимуществами выбранной позиции. Можно, так сказать, продающий текст, который, кстати, очень важен для стимулирования покупателя.
+                    .reviews__item.itemHidden.reviews-item.hidden 
+                        img(src="img/reviews/avatar.png" alt="")
+                        .reviews-item__header
+                            .reviews-item__aside
+                                p.reviews-item__name Фатима
+                                date.reviews-item__date 31 февраля 2022 г.
+                            .card-aside__stars 
+                                <svg class="active" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#EBEBEB"/></svg>
+                                <svg class="active" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#EBEBEB"/></svg>
+                                <svg class="active" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#EBEBEB"/></svg>
+                                <svg class="active" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#EBEBEB"/></svg>
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#EBEBEB"/></svg>
+                                span 4.1
+                        .reviews-item__text 
+                            p Текст с описанием и преимуществами выбранной позиции. Можно, так сказать, продающий текст, который, кстати, очень важен для стимулирования покупателя.
+                    .reviews__item.itemHidden.reviews-item.hidden 
+                        img(src="img/reviews/avatar.png" alt="")
+                        .reviews-item__header
+                            .reviews-item__aside
+                                p.reviews-item__name Фатима
+                                date.reviews-item__date 31 февраля 2022 г.
+                            .card-aside__stars 
+                                <svg class="active" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#EBEBEB"/></svg>
+                                <svg class="active" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#EBEBEB"/></svg>
+                                <svg class="active" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#EBEBEB"/></svg>
+                                <svg class="active" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#EBEBEB"/></svg>
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#EBEBEB"/></svg>
+                                span 4.1
+                        .reviews-item__text 
+                            p Текст с описанием и преимуществами выбранной позиции. Можно, так сказать, продающий текст, который, кстати, очень важен для стимулирования покупателя.
+                    .reviews__item.itemHidden.reviews-item.hidden 
+                        img(src="img/reviews/avatar.png" alt="")
+                        .reviews-item__header
+                            .reviews-item__aside
+                                p.reviews-item__name Фатима
+                                date.reviews-item__date 31 февраля 2022 г.
+                            .card-aside__stars 
+                                <svg class="active" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#EBEBEB"/></svg>
+                                <svg class="active" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#EBEBEB"/></svg>
+                                <svg class="active" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#EBEBEB"/></svg>
+                                <svg class="active" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#EBEBEB"/></svg>
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#EBEBEB"/></svg>
+                                span 4.1
+                        .reviews-item__text 
+                            p Текст с описанием и преимуществами выбранной позиции. Можно, так сказать, продающий текст, который, кстати, очень важен для стимулирования покупателя.
+
+                    .reviews__buttons
+                        button.button-main.reviews__button#showMore Ещё отзывы
+                        button.button-main.reviews__button#sendFeedback Оставить отзыв
+
+
+
+
+
+        include modals/modal-review.pug
+        include modals/modal-enter.pug
+        include modules/burger-menu.pug
+        include modules/footer.pug
+        include modules/script.pug

@@ -1,0 +1,16 @@
+.overlay#modal-feedback
+    .modal.modal__feedback
+        .modal__closed 
+            img(src="img/icons/cross.svg", alt="")
+        h2.modal__title.title Напишите нам
+        form.modal-feedback__form
+            p
+                input(type="text" placeholder="Имя")
+            p
+                input(type="text" placeholder="Email")
+            p
+                textarea
+            p
+                input(type="checkbox" id="check1")
+                label(for="check1") Нажимая кнопку «Отправить», вы соглашаетесь с политикой конфиденциальности и даёте согласие на обработку персональных данных
+            button.button-main.modal__button(type="submit") Отправить

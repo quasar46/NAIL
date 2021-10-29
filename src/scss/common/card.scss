@@ -1,0 +1,16 @@
+.card__wrapper {
+  display: flex;
+  @media (max-width: 1279px) {
+    flex-direction: column;
+  }
+}
+
+.card__slider {
+  display: flex;
+  @media (max-width: 1279px) {
+    margin-bottom: 40px;
+  }
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,36 @@
+.articles__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+
+.articles__button {
+  align-self: center;
+  margin: 0 auto;
+}
+
+.articles__title {
+  font-size: 36px;
+  margin-bottom: 60px;
+  font-weight: 400;
+  @media (max-width: 1991px) {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  @media (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+}
+
+.articles-item__button {
+  margin-top: auto;
+}
+
+.articles-item__footer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}

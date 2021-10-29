@@ -1,0 +1,497 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header.pug
+
+        section.breadcrumbs 
+            h2.visually-hidden Навигация
+            .container 
+                ul.breadcrumbs__list
+                    li 
+                        a(href="index.html") Главная 
+                    li /
+                    li 
+                        a.breadcrumbs__current Каталог 
+
+        section.main-catalog
+            .container
+                h2.main-catalog__title.title Каталог
+                .main-catalog__wrapper 
+                    .main-catalog__aside.catalog-aside
+                        .catalog-aside__caption-mobile 
+                            span.catalog-aside__reset#reset Сбросить
+                        .catalog-aside__close#closeFilter 
+                            img(src="img/icons/cross.svg" alt="закрыть фильтр")
+                        .catalog-aside__row
+                            .catalog-aside__item
+                                a(href="sales.html") Распродажа
+                        .catalog-aside__row
+                            .catalog-aside__item
+                                a(href="stocks.html") Акции
+                        .catalog-aside__row
+                            .catalog-aside__item
+                                a(href="new-products.html") Новинки
+                        .catalog-aside__row
+                            .catalog-aside__item
+                                a(href="") Хиты продаж
+                        .catalog-aside__row
+                            .catalog-aside__item
+                                a Брови
+                                <svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L10 10L19 1" stroke="#0B0B0B" stroke-opacity="0.9" stroke-linecap="round"/></svg>
+                        .catalog-aside__row
+                            .catalog-aside__item
+                                a Hover: Акрил
+                                <svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L10 10L19 1" stroke="#0B0B0B" stroke-opacity="0.9" stroke-linecap="round"/></svg>
+                        .catalog-aside__row
+                            .catalog-aside__item
+                                a Active: Акригель, полигель
+                                <svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L10 10L19 1" stroke="#0B0B0B" stroke-opacity="0.9" stroke-linecap="round"/></svg>
+                            ul.catalog-aside__sublist 
+                                li
+                                    input(type="checkbox" id="check_1")
+                                    label(for="check_1") Bloom полигель
+                                li
+                                    input(type="checkbox" id="check_2")
+                                    label(for="check_2") Hover: Imen полигель
+                                li
+                                    input(type="checkbox" id="check_3")
+                                    label(for="check_3") BN by Bagheera Nails полигель
+                                li
+                                    input(type="checkbox" id="check_4")
+                                    label(for="check_4") Cosmoprofi акрилатик
+                                li
+                                    input(type="checkbox" id="check_5")
+                                    label(for="check_5") Grattol акригель
+                                li
+                                    input(type="checkbox" id="check_6")
+                                    label(for="check_6") Lusso акригель
+                                li
+                                    input(type="checkbox" id="check_7")
+                                    label(for="check_7") KLIO акригель
+                                li
+                                    input(type="checkbox" id="check_8")
+                                    label(for="check_8") MIO Nails полигель
+                                li
+                                    input(type="checkbox" id="check_9")
+                                    label(for="check_9") SOTA акригель
+                                li
+                                    input(type="checkbox" id="check_10")
+                                    label(for="check_10") MILK полигель
+                                li
+                                    input(type="checkbox" id="check_11")
+                                    label(for="check_11") Mystique акригель
+                                li
+                                    input(type="checkbox" id="check_12")
+                                    label(for="check_12") Опция акригель
+                                li
+                                    input(type="checkbox" id="check_13")
+                                    label(for="check_13") Patrisa Nail комби гель
+                                li
+                                    input(type="checkbox" id="check_14")
+                                    label(for="check_14") Serebro акригель
+                                li
+                                    input(type="checkbox" id="check_15")
+                                    label(for="check_15") VELVET акригель
+                        .catalog-aside__row
+                            .catalog-aside__item
+                                a Аппараты
+                                <svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L10 10L19 1" stroke="#0B0B0B" stroke-opacity="0.9" stroke-linecap="round"/></svg>
+                        .catalog-aside__row
+                            .catalog-aside__item
+                                a Аксессуары
+                                <svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L10 10L19 1" stroke="#0B0B0B" stroke-opacity="0.9" stroke-linecap="round"/></svg>
+                        .catalog-aside__row
+                            .catalog-aside__item
+                                a Аэрография
+                                <svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L10 10L19 1" stroke="#0B0B0B" stroke-opacity="0.9" stroke-linecap="round"/></svg>
+                        .catalog-aside__row
+                            .catalog-aside__item
+                                a Боры, фрезы, колпачки
+                                <svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L10 10L19 1" stroke="#0B0B0B" stroke-opacity="0.9" stroke-linecap="round"/></svg>
+                        .catalog-aside__row
+                            .catalog-aside__item
+                                a Гель
+                                <svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L10 10L19 1" stroke="#0B0B0B" stroke-opacity="0.9" stroke-linecap="round"/></svg>
+                        .catalog-aside__row
+                            .catalog-aside__item
+                                a Гель-лак
+                                <svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L10 10L19 1" stroke="#0B0B0B" stroke-opacity="0.9" stroke-linecap="round"/></svg>
+                        .catalog-aside__row
+                            .catalog-aside__item
+                                a Дизайн
+                                <svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L10 10L19 1" stroke="#0B0B0B" stroke-opacity="0.9" stroke-linecap="round"/></svg>
+                        .catalog-aside__row
+                            .catalog-aside__item.catalog-aside__item--notclick
+                                a Цена
+                                span.catalog-aside__reset Сбросить
+                            ul.catalog-aside__price
+                                .catalo-aside__inputs
+                                    input(type="text" placeholder="0")
+                                    input(type="text" placeholder="100 000")
+                                .catalog-aside__slider 
+                                    span
+                                        i.dot.dot--1 
+                                        i.dot.dot--2
+
+
+
+
+                    .main-catalog__content 
+                        .main-catalog__top-filter.top-filter
+                            .top-filter__list 
+                                button.top-filter__item.top-filter__open#openFilter
+                                    img(src="img/icons/burger-filter.svg" alt="открыть фильтр")
+                                    span Фильтр
+                                a.top-filter__item.top-filter__select
+                                    select#select
+                                        option(value="1") Популярные
+                                        option(value="2") Популярные2
+                                        option(value="3") Популярные3
+                                a.top-filter__item.top-filter__link
+                                    p Цена: 99 – 100 000 
+                                    img.top-filter__close(src="img/icons/cross-filter.svg" alt="закрыть фильтр")
+                                a.top-filter__item.top-filter__link
+                                    p Bloom полигель
+                                    img.top-filter__close(src="img/icons/cross-filter.svg" alt="закрыть фильтр")
+                                a.top-filter__item.top-filter__link
+                                    p Цена: 100 – 10000
+                                    img.top-filter__close(src="img/icons/cross-filter.svg" alt="закрыть фильтр")
+                                a.top-filter__item.top-filter__link
+                                    p Цена: 100 – 10000
+                                    img.top-filter__close(src="img/icons/cross-filter.svg" alt="закрыть фильтр")
+                                a.top-filter__item.top-filter__link
+                                    p Bloom полигель
+                                    img.top-filter__close(src="img/icons/cross-filter.svg" alt="закрыть фильтр")
+                        .main-catalog__cards
+                            ul.catalog
+                                li.card-catalog__wrapper.card-catalog__wrapper--catalog.itemHidden.current 
+                                    a.catalog__card.card-catalog(href="/")
+                                        .card-catalog__picture 
+                                            img(src="img/catalog/item1.jpg" alt="")
+                                        .card-catalog__price 
+                                            span.card-catalog__price-current 10 390 руб.
+                                        p.card-catalog__name Орли “Вернис”
+                                        p.card-catalog__subtitle Лак для ногтей
+                                        .card-catalog__reviews 
+                                            .card-catalog__likes 
+                                                img(src="img/icons/star.svg" alt="")
+                                                span 4.8
+                                            p.card-catalog__numbers 146 отзывов
+                                        button.card-catalog__button.button-main В корзину
+                                        <svg class="card-catalog__favorite" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.0002 25C-10.9583 8.78886 5.62343 -3.86391 12.7252 2.82887C12.819 2.91687 12.9112 3.00807 13.0002 3.10247C13.0884 3.00816 13.1801 2.91742 13.2752 2.83047C20.3754 -3.86711 36.9588 8.78726 13.0002 25Z" stroke="#898989"/></svg>
+                                li.card-catalog__wrapper.card-catalog__wrapper--catalog.itemHidden.current 
+                                    a.catalog__card.card-catalog(href="/")
+                                        .card-catalog__picture 
+                                            img(src="img/catalog/item1.jpg" alt="")
+                                        .card-catalog__price 
+                                            span.card-catalog__price-current 10 390 руб.
+                                            span.card-catalog__price-old 10 555 руб.
+                                        p.card-catalog__name Орли “Вернис”
+                                        p.card-catalog__subtitle Лак для ногтей
+                                        .card-catalog__reviews 
+                                            .card-catalog__likes 
+                                                img(src="img/icons/star.svg" alt="")
+                                                span 4.8
+                                            p.card-catalog__numbers 146 отзывов
+                                        button.card-catalog__button.button-main В корзину
+                                        <svg class="card-catalog__favorite" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.0002 25C-10.9583 8.78886 5.62343 -3.86391 12.7252 2.82887C12.819 2.91687 12.9112 3.00807 13.0002 3.10247C13.0884 3.00816 13.1801 2.91742 13.2752 2.83047C20.3754 -3.86711 36.9588 8.78726 13.0002 25Z" stroke="#898989"/></svg>
+
+                                li.card-catalog__wrapper.card-catalog__wrapper--catalog.itemHidden.current 
+                                    a.catalog__card.card-catalog(href="/")
+                                        .card-catalog__picture 
+                                            img(src="img/catalog/item1.jpg" alt="")
+                                        .card-catalog__price 
+                                            span.card-catalog__price-current 10 390 руб.
+                                        p.card-catalog__name Орли “Вернис”
+                                        p.card-catalog__subtitle Лак для ногтей
+                                        .card-catalog__reviews 
+                                            .card-catalog__likes 
+                                                img(src="img/icons/star.svg" alt="")
+                                                span 4.8
+                                            p.card-catalog__numbers 146 отзывов
+                                        button.card-catalog__button.button-main В корзину
+                                        <svg class="card-catalog__favorite" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.0002 25C-10.9583 8.78886 5.62343 -3.86391 12.7252 2.82887C12.819 2.91687 12.9112 3.00807 13.0002 3.10247C13.0884 3.00816 13.1801 2.91742 13.2752 2.83047C20.3754 -3.86711 36.9588 8.78726 13.0002 25Z" stroke="#898989"/></svg>
+                                li.card-catalog__wrapper.card-catalog__wrapper--catalog.itemHidden.current 
+                                    a.catalog__card.card-catalog(href="/")
+                                        .card-catalog__picture 
+                                            img(src="img/catalog/item1.jpg" alt="")
+                                        .card-catalog__price 
+                                            span.card-catalog__price-current 10 390 руб.
+                                            span.card-catalog__price-old 10 555 руб.
+                                        p.card-catalog__name Орли “Вернис”
+                                        p.card-catalog__subtitle Лак для ногтей
+                                        .card-catalog__reviews 
+                                            .card-catalog__likes 
+                                                img(src="img/icons/star.svg" alt="")
+                                                span 4.8
+                                            p.card-catalog__numbers 146 отзывов
+                                        button.card-catalog__button.button-main В корзину
+                                        <svg class="card-catalog__favorite" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.0002 25C-10.9583 8.78886 5.62343 -3.86391 12.7252 2.82887C12.819 2.91687 12.9112 3.00807 13.0002 3.10247C13.0884 3.00816 13.1801 2.91742 13.2752 2.83047C20.3754 -3.86711 36.9588 8.78726 13.0002 25Z" stroke="#898989"/></svg>
+
+                                li.card-catalog__wrapper.card-catalog__wrapper--catalog.itemHidden.current 
+                                    a.catalog__card.card-catalog(href="/")
+                                        .card-catalog__picture 
+                                            img(src="img/catalog/item1.jpg" alt="")
+                                        .card-catalog__price 
+                                            span.card-catalog__price-current 10 390 руб.
+                                        p.card-catalog__name Орли “Вернис”
+                                        p.card-catalog__subtitle Лак для ногтей
+                                        .card-catalog__reviews 
+                                            .card-catalog__likes 
+                                                img(src="img/icons/star.svg" alt="")
+                                                span 4.8
+                                            p.card-catalog__numbers 146 отзывов
+                                        button.card-catalog__button.button-main В корзину
+                                        <svg class="card-catalog__favorite" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.0002 25C-10.9583 8.78886 5.62343 -3.86391 12.7252 2.82887C12.819 2.91687 12.9112 3.00807 13.0002 3.10247C13.0884 3.00816 13.1801 2.91742 13.2752 2.83047C20.3754 -3.86711 36.9588 8.78726 13.0002 25Z" stroke="#898989"/></svg>
+                                li.card-catalog__wrapper.card-catalog__wrapper--catalog.itemHidden.current 
+                                    a.catalog__card.card-catalog(href="/")
+                                        .card-catalog__picture 
+                                            img(src="img/catalog/item1.jpg" alt="")
+                                        .card-catalog__price 
+                                            span.card-catalog__price-current 10 390 руб.
+                                            span.card-catalog__price-old 10 555 руб.
+                                        p.card-catalog__name Орли “Вернис”
+                                        p.card-catalog__subtitle Лак для ногтей
+                                        .card-catalog__reviews 
+                                            .card-catalog__likes 
+                                                img(src="img/icons/star.svg" alt="")
+                                                span 4.8
+                                            p.card-catalog__numbers 146 отзывов
+                                        button.card-catalog__button.button-main В корзину
+                                        <svg class="card-catalog__favorite" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.0002 25C-10.9583 8.78886 5.62343 -3.86391 12.7252 2.82887C12.819 2.91687 12.9112 3.00807 13.0002 3.10247C13.0884 3.00816 13.1801 2.91742 13.2752 2.83047C20.3754 -3.86711 36.9588 8.78726 13.0002 25Z" stroke="#898989"/></svg>
+
+                                li.card-catalog__wrapper.card-catalog__wrapper--catalog.itemHidden.current 
+                                    a.catalog__card.card-catalog(href="/")
+                                        .card-catalog__picture 
+                                            img(src="img/catalog/item1.jpg" alt="")
+                                        .card-catalog__price 
+                                            span.card-catalog__price-current 10 390 руб.
+                                        p.card-catalog__name Орли “Вернис”
+                                        p.card-catalog__subtitle Лак для ногтей
+                                        .card-catalog__reviews 
+                                            .card-catalog__likes 
+                                                img(src="img/icons/star.svg" alt="")
+                                                span 4.8
+                                            p.card-catalog__numbers 146 отзывов
+                                        button.card-catalog__button.button-main В корзину
+                                        <svg class="card-catalog__favorite" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.0002 25C-10.9583 8.78886 5.62343 -3.86391 12.7252 2.82887C12.819 2.91687 12.9112 3.00807 13.0002 3.10247C13.0884 3.00816 13.1801 2.91742 13.2752 2.83047C20.3754 -3.86711 36.9588 8.78726 13.0002 25Z" stroke="#898989"/></svg>
+                                li.card-catalog__wrapper.card-catalog__wrapper--catalog.itemHidden.current 
+                                    a.catalog__card.card-catalog(href="/")
+                                        .card-catalog__picture 
+                                            img(src="img/catalog/item1.jpg" alt="")
+                                        .card-catalog__price 
+                                            span.card-catalog__price-current 10 390 руб.
+                                            span.card-catalog__price-old 10 555 руб.
+                                        p.card-catalog__name Орли “Вернис”
+                                        p.card-catalog__subtitle Лак для ногтей
+                                        .card-catalog__reviews 
+                                            .card-catalog__likes 
+                                                img(src="img/icons/star.svg" alt="")
+                                                span 4.8
+                                            p.card-catalog__numbers 146 отзывов
+                                        button.card-catalog__button.button-main В корзину
+                                        <svg class="card-catalog__favorite" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.0002 25C-10.9583 8.78886 5.62343 -3.86391 12.7252 2.82887C12.819 2.91687 12.9112 3.00807 13.0002 3.10247C13.0884 3.00816 13.1801 2.91742 13.2752 2.83047C20.3754 -3.86711 36.9588 8.78726 13.0002 25Z" stroke="#898989"/></svg>
+
+                                li.card-catalog__wrapper.card-catalog__wrapper--catalog.itemHidden.current 
+                                    a.catalog__card.card-catalog(href="/")
+                                        .card-catalog__picture 
+                                            img(src="img/catalog/item1.jpg" alt="")
+                                        .card-catalog__price 
+                                            span.card-catalog__price-current 10 390 руб.
+                                        p.card-catalog__name Орли “Вернис”
+                                        p.card-catalog__subtitle Лак для ногтей
+                                        .card-catalog__reviews 
+                                            .card-catalog__likes 
+                                                img(src="img/icons/star.svg" alt="")
+                                                span 4.8
+                                            p.card-catalog__numbers 146 отзывов
+                                        button.card-catalog__button.button-main В корзину
+                                        <svg class="card-catalog__favorite" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.0002 25C-10.9583 8.78886 5.62343 -3.86391 12.7252 2.82887C12.819 2.91687 12.9112 3.00807 13.0002 3.10247C13.0884 3.00816 13.1801 2.91742 13.2752 2.83047C20.3754 -3.86711 36.9588 8.78726 13.0002 25Z" stroke="#898989"/></svg>
+                                li.card-catalog__wrapper.card-catalog__wrapper--catalog.itemHidden.current 
+                                    a.catalog__card.card-catalog(href="/")
+                                        .card-catalog__picture 
+                                            img(src="img/catalog/item1.jpg" alt="")
+                                        .card-catalog__price 
+                                            span.card-catalog__price-current 10 390 руб.
+                                            span.card-catalog__price-old 10 555 руб.
+                                        p.card-catalog__name Орли “Вернис”
+                                        p.card-catalog__subtitle Лак для ногтей
+                                        .card-catalog__reviews 
+                                            .card-catalog__likes 
+                                                img(src="img/icons/star.svg" alt="")
+                                                span 4.8
+                                            p.card-catalog__numbers 146 отзывов
+                                        button.card-catalog__button.button-main В корзину
+                                        <svg class="card-catalog__favorite" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.0002 25C-10.9583 8.78886 5.62343 -3.86391 12.7252 2.82887C12.819 2.91687 12.9112 3.00807 13.0002 3.10247C13.0884 3.00816 13.1801 2.91742 13.2752 2.83047C20.3754 -3.86711 36.9588 8.78726 13.0002 25Z" stroke="#898989"/></svg>
+
+                                li.card-catalog__wrapper.card-catalog__wrapper--catalog.itemHidden.current 
+                                    a.catalog__card.card-catalog(href="/")
+                                        .card-catalog__picture 
+                                            img(src="img/catalog/item1.jpg" alt="")
+                                        .card-catalog__price 
+                                            span.card-catalog__price-current 10 390 руб.
+                                        p.card-catalog__name Орли “Вернис”
+                                        p.card-catalog__subtitle Лак для ногтей
+                                        .card-catalog__reviews 
+                                            .card-catalog__likes 
+                                                img(src="img/icons/star.svg" alt="")
+                                                span 4.8
+                                            p.card-catalog__numbers 146 отзывов
+                                        button.card-catalog__button.button-main В корзину
+                                        <svg class="card-catalog__favorite" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.0002 25C-10.9583 8.78886 5.62343 -3.86391 12.7252 2.82887C12.819 2.91687 12.9112 3.00807 13.0002 3.10247C13.0884 3.00816 13.1801 2.91742 13.2752 2.83047C20.3754 -3.86711 36.9588 8.78726 13.0002 25Z" stroke="#898989"/></svg>
+                                li.card-catalog__wrapper.card-catalog__wrapper--catalog.itemHidden.current 
+                                    a.catalog__card.card-catalog(href="/")
+                                        .card-catalog__picture 
+                                            img(src="img/catalog/item1.jpg" alt="")
+                                        .card-catalog__price 
+                                            span.card-catalog__price-current 10 390 руб.
+                                            span.card-catalog__price-old 10 555 руб.
+                                        p.card-catalog__name Орли “Вернис”
+                                        p.card-catalog__subtitle Лак для ногтей
+                                        .card-catalog__reviews 
+                                            .card-catalog__likes 
+                                                img(src="img/icons/star.svg" alt="")
+                                                span 4.8
+                                            p.card-catalog__numbers 146 отзывов
+                                        button.card-catalog__button.button-main В корзину
+                                        <svg class="card-catalog__favorite" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.0002 25C-10.9583 8.78886 5.62343 -3.86391 12.7252 2.82887C12.819 2.91687 12.9112 3.00807 13.0002 3.10247C13.0884 3.00816 13.1801 2.91742 13.2752 2.83047C20.3754 -3.86711 36.9588 8.78726 13.0002 25Z" stroke="#898989"/></svg>
+                                li.card-catalog__wrapper.card-catalog__wrapper--catalog.itemHidden.current 
+                                    a.catalog__card.card-catalog(href="/")
+                                        .card-catalog__picture 
+                                            img(src="img/catalog/item1.jpg" alt="")
+                                        .card-catalog__price 
+                                            span.card-catalog__price-current 10 390 руб.
+                                            span.card-catalog__price-old 10 555 руб.
+                                        p.card-catalog__name Орли “Вернис”
+                                        p.card-catalog__subtitle Лак для ногтей
+                                        .card-catalog__reviews 
+                                            .card-catalog__likes 
+                                                img(src="img/icons/star.svg" alt="")
+                                                span 4.8
+                                            p.card-catalog__numbers 146 отзывов
+                                        button.card-catalog__button.button-main В корзину
+                                        <svg class="card-catalog__favorite" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.0002 25C-10.9583 8.78886 5.62343 -3.86391 12.7252 2.82887C12.819 2.91687 12.9112 3.00807 13.0002 3.10247C13.0884 3.00816 13.1801 2.91742 13.2752 2.83047C20.3754 -3.86711 36.9588 8.78726 13.0002 25Z" stroke="#898989"/></svg>
+                                li.card-catalog__wrapper.card-catalog__wrapper--catalog.itemHidden.current 
+                                    a.catalog__card.card-catalog(href="/")
+                                        .card-catalog__picture 
+                                            img(src="img/catalog/item1.jpg" alt="")
+                                        .card-catalog__price 
+                                            span.card-catalog__price-current 10 390 руб.
+                                            span.card-catalog__price-old 10 555 руб.
+                                        p.card-catalog__name Орли “Вернис”
+                                        p.card-catalog__subtitle Лак для ногтей
+                                        .card-catalog__reviews 
+                                            .card-catalog__likes 
+                                                img(src="img/icons/star.svg" alt="")
+                                                span 4.8
+                                            p.card-catalog__numbers 146 отзывов
+                                        button.card-catalog__button.button-main В корзину
+                                        <svg class="card-catalog__favorite" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.0002 25C-10.9583 8.78886 5.62343 -3.86391 12.7252 2.82887C12.819 2.91687 12.9112 3.00807 13.0002 3.10247C13.0884 3.00816 13.1801 2.91742 13.2752 2.83047C20.3754 -3.86711 36.9588 8.78726 13.0002 25Z" stroke="#898989"/></svg>
+                                li.card-catalog__wrapper.card-catalog__wrapper--catalog.itemHidden.current 
+                                    a.catalog__card.card-catalog(href="/")
+                                        .card-catalog__picture 
+                                            img(src="img/catalog/item1.jpg" alt="")
+                                        .card-catalog__price 
+                                            span.card-catalog__price-current 10 390 руб.
+                                            span.card-catalog__price-old 10 555 руб.
+                                        p.card-catalog__name Орли “Вернис”
+                                        p.card-catalog__subtitle Лак для ногтей
+                                        .card-catalog__reviews 
+                                            .card-catalog__likes 
+                                                img(src="img/icons/star.svg" alt="")
+                                                span 4.8
+                                            p.card-catalog__numbers 146 отзывов
+                                        button.card-catalog__button.button-main В корзину
+                                        <svg class="card-catalog__favorite" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.0002 25C-10.9583 8.78886 5.62343 -3.86391 12.7252 2.82887C12.819 2.91687 12.9112 3.00807 13.0002 3.10247C13.0884 3.00816 13.1801 2.91742 13.2752 2.83047C20.3754 -3.86711 36.9588 8.78726 13.0002 25Z" stroke="#898989"/></svg>
+                                li.card-catalog__wrapper.card-catalog__wrapper--catalog.itemHidden.current 
+                                    a.catalog__card.card-catalog(href="/")
+                                        .card-catalog__picture 
+                                            img(src="img/catalog/item1.jpg" alt="")
+                                        .card-catalog__price 
+                                            span.card-catalog__price-current 10 390 руб.
+                                            span.card-catalog__price-old 10 555 руб.
+                                        p.card-catalog__name Орли “Вернис”
+                                        p.card-catalog__subtitle Лак для ногтей
+                                        .card-catalog__reviews 
+                                            .card-catalog__likes 
+                                                img(src="img/icons/star.svg" alt="")
+                                                span 4.8
+                                            p.card-catalog__numbers 146 отзывов
+                                        button.card-catalog__button.button-main В корзину
+                                        <svg class="card-catalog__favorite" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.0002 25C-10.9583 8.78886 5.62343 -3.86391 12.7252 2.82887C12.819 2.91687 12.9112 3.00807 13.0002 3.10247C13.0884 3.00816 13.1801 2.91742 13.2752 2.83047C20.3754 -3.86711 36.9588 8.78726 13.0002 25Z" stroke="#898989"/></svg>
+                                li.card-catalog__wrapper.card-catalog__wrapper--catalog.itemHidden.hidden 
+                                    a.catalog__card.card-catalog(href="/")
+                                        .card-catalog__picture 
+                                            img(src="img/catalog/item1.jpg" alt="")
+                                        .card-catalog__price 
+                                            span.card-catalog__price-current 10 390 руб.
+                                            span.card-catalog__price-old 10 555 руб.
+                                        p.card-catalog__name Орли “Вернис”
+                                        p.card-catalog__subtitle Лак для ногтей
+                                        .card-catalog__reviews 
+                                            .card-catalog__likes 
+                                                img(src="img/icons/star.svg" alt="")
+                                                span 4.8
+                                            p.card-catalog__numbers 146 отзывов
+                                        button.card-catalog__button.button-main В корзину
+                                        <svg class="card-catalog__favorite" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.0002 25C-10.9583 8.78886 5.62343 -3.86391 12.7252 2.82887C12.819 2.91687 12.9112 3.00807 13.0002 3.10247C13.0884 3.00816 13.1801 2.91742 13.2752 2.83047C20.3754 -3.86711 36.9588 8.78726 13.0002 25Z" stroke="#898989"/></svg>
+                                li.card-catalog__wrapper.card-catalog__wrapper--catalog.itemHidden.hidden 
+                                    a.catalog__card.card-catalog(href="/")
+                                        .card-catalog__picture 
+                                            img(src="img/catalog/item1.jpg" alt="")
+                                        .card-catalog__price 
+                                            span.card-catalog__price-current 10 390 руб.
+                                            span.card-catalog__price-old 10 555 руб.
+                                        p.card-catalog__name Орли “Вернис”
+                                        p.card-catalog__subtitle Лак для ногтей
+                                        .card-catalog__reviews 
+                                            .card-catalog__likes 
+                                                img(src="img/icons/star.svg" alt="")
+                                                span 4.8
+                                            p.card-catalog__numbers 146 отзывов
+                                        button.card-catalog__button.button-main В корзину
+                                        <svg class="card-catalog__favorite" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.0002 25C-10.9583 8.78886 5.62343 -3.86391 12.7252 2.82887C12.819 2.91687 12.9112 3.00807 13.0002 3.10247C13.0884 3.00816 13.1801 2.91742 13.2752 2.83047C20.3754 -3.86711 36.9588 8.78726 13.0002 25Z" stroke="#898989"/></svg>
+                                li.card-catalog__wrapper.card-catalog__wrapper--catalog.itemHidden.hidden 
+                                    a.catalog__card.card-catalog(href="/")
+                                        .card-catalog__picture 
+                                            img(src="img/catalog/item1.jpg" alt="")
+                                        .card-catalog__price 
+                                            span.card-catalog__price-current 10 390 руб.
+                                            span.card-catalog__price-old 10 555 руб.
+                                        p.card-catalog__name Орли “Вернис”
+                                        p.card-catalog__subtitle Лак для ногтей
+                                        .card-catalog__reviews 
+                                            .card-catalog__likes 
+                                                img(src="img/icons/star.svg" alt="")
+                                                span 4.8
+                                            p.card-catalog__numbers 146 отзывов
+                                        button.card-catalog__button.button-main В корзину
+                                        <svg class="card-catalog__favorite" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.0002 25C-10.9583 8.78886 5.62343 -3.86391 12.7252 2.82887C12.819 2.91687 12.9112 3.00807 13.0002 3.10247C13.0884 3.00816 13.1801 2.91742 13.2752 2.83047C20.3754 -3.86711 36.9588 8.78726 13.0002 25Z" stroke="#898989"/></svg>
+                                li.card-catalog__wrapper.card-catalog__wrapper--catalog.itemHidden.hidden 
+                                    a.catalog__card.card-catalog(href="/")
+                                        .card-catalog__picture 
+                                            img(src="img/catalog/item1.jpg" alt="")
+                                        .card-catalog__price 
+                                            span.card-catalog__price-current 10 390 руб.
+                                            span.card-catalog__price-old 10 555 руб.
+                                        p.card-catalog__name Орли “Вернис”
+                                        p.card-catalog__subtitle Лак для ногтей
+                                        .card-catalog__reviews 
+                                            .card-catalog__likes 
+                                                img(src="img/icons/star.svg" alt="")
+                                                span 4.8
+                                            p.card-catalog__numbers 146 отзывов
+                                        button.card-catalog__button.button-main В корзину
+                                        <svg class="card-catalog__favorite" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.0002 25C-10.9583 8.78886 5.62343 -3.86391 12.7252 2.82887C12.819 2.91687 12.9112 3.00807 13.0002 3.10247C13.0884 3.00816 13.1801 2.91742 13.2752 2.83047C20.3754 -3.86711 36.9588 8.78726 13.0002 25Z" stroke="#898989"/></svg>
+
+                        button.button-main.main-catalog__button#showMore Показать ещё
+
+
+
+        include modules/burger-menu.pug
+
+        include modules/footer.pug
+        include modules/script.pug
+        //- script(src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js")
+        script(src="js/jquery.formstyler.min.js")
